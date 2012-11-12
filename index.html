@@ -9,6 +9,12 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+		<style>
+		.reveal p.via {
+			font-size:75%;
+			margin-top:1em;
+		}
+		</style>
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="css/prism.css">
@@ -183,7 +189,7 @@
 		</section>
 		<section>
 			<h2>You Can Interupt Submitting a Form</h2>
-			<p>This is useful for checking if certain fields are filled in or you want to perform an AJAX request.</p>
+			<p>This is useful for checking if certain fields are completed or you want to perform an AJAX request.</p>
 			<pre class="language-javascript"><code>$('form').submit(function() {
 	if( condition == false ) {
 		//returning false cancels the form from being submitted.
