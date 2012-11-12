@@ -29,40 +29,43 @@
 		<section>
 			<h1>jQuery Events</h1>
 			<p>presented at</p>
-			<p><a href="http://www.meetup.com/DC-jQuery-Users-Group/events/87412532/">dcjq[18] Back to Basics</a></p>
+			<p><a href="http://www.meetup.com/DC-jQuery-Users-Group/events/87412532/" target="_blank">dcjq[18] Back to Basics</a></p>
 			<p> </p>
 			<p>November 12, 2012</p>
 		</section>
 		<section>
+			<h2>Follow Along</h2>
+			<p><a href="http://v.gd/jqevents" target="_blank">v.gd/jqevents</a></p>
+		</section>
+		<section>
 			<h2>Hi, I'm Russell Heimlich</h2>
 			<ul>
-				<li>Lead technical figure-outer at
-					<a href="http://www.pewresearch.org">Pew Research Center</a>
+				<li class="fragment">Lead technical figure-outer at
+					<a href="http://www.pewresearch.org" target="_blank">Pew Research Center</a>
 					<br><br>
 				</li>
-				<li>Creator of <a href="http://dummyimage.com">http://dummyimage.com</a><br><br>
+				<li class="fragment">Creator of <a href="http://dummyimage.com" target="_blank">http://dummyimage.com</a><br><br>
 				</li>
-				<li>Left handed</li>
+				<li class="fragment">Left handed</li>
 			</ul>
 		</section>
 		<section>
-			<h2>What are Events?</h2>
+			<h2>What Are Events?</h2>
+			<img class="fragment" src="img/dcjq-event.jpeg">
+		</section>
+		<section>
+			<h2>What are <em>JavaScript</em> Events?</h2>
 			<ul>
 				<li>JavaScripts adds <strong>interactivity</strong> to a page<br><br></li>
 				<li>User does something, the page <strong>reacts</strong><br><br></li>
 				<li>Events <strong>trigger</strong> something else to happen</li>
 			</ul>
-			<p>via <a href="http://www.quirksmode.org/js/introevents.html">Introduction to Events</a> by Quirksmode.org</p>
+			<p class="via">via <a href="http://www.quirksmode.org/js/introevents.html" target="_blank">Introduction to Events</a> by Quirksmode.org</p>
 		</section>
 		<section>
 			<h2>Classic Inline Event Example</h2>
 			<pre class="language-markup"><code>&lt;a href="#" onClick="alert('hello world')"&gt;Show Pointless Alert&lt;/a&gt;</code></pre>
-			<p><a href="http://jsfiddle.net/kingkool68/y2E7t/">http://jsfiddle.net/kingkool68/y2E7t/</a></p>
-		</section>
-		<section>
-			<h2>Remember Dreamweaver Image Rollovers?</h2>
-			<p>OMGWTFBBQ?!?!</p>
-			<p><a href="http://jsfiddle.net/kingkool68/ZpaS3/">http://jsfiddle.net/kingkool68/ZpaS3/</a></p>
+			<p class="jsfiddle"><a href="http://jsfiddle.net/kingkool68/y2E7t/" target="_blank">http://jsfiddle.net/kingkool68/y2E7t/</a></p>
 		</section>
 		<section>
 			<h2>Lots of Events To Choose From</h2>
@@ -75,15 +78,14 @@
 				<li>onSubmit</li>
 				<li>onLoad</li>
 			</ul>
+			<p class="via">via <a href="http://www.irt.org/articles/js058/" target="_blank">http://www.irt.org/articles/js058/</a></p>
 		</section>
 		<section>
 			<h2>Keyboard And Mouse Specific Events</h2>
 			<ul>
 				<li>onKeyDown</li>
 				<li>onKeyUp</li>
-				<li>onKeyPress</li>
-			</ul>
-			<ul>
+				<li>onKeyPress<br><br></li>
 				<li>onMouseDown</li>
 				<li>onMouseUp</li>
 				<li>onMouseOver</li>
@@ -94,16 +96,22 @@
 		<section>
 			<h2>Inline Event Attributes are Bad</h2>
 			<ul>
-				<li>Mix HTML and JavaScript, no separation</li>
-				<li>Escaping quotes will drive you insane</li>
+				<li>Mix HTML and JavaScript, no separation<br><br></li>
+				<li>Escaping quotes will drive you insane<br><br></li>
 				<li>General all-around pain in the rump</li>
 			</ul>
-			<p>via <a href="http://stackoverflow.com/questions/6888651/javascript-events-best-practice">JavaScript Events Best Practices</a> on Stackoverflow</p>
+			<p class="via">via <a href="http://stackoverflow.com/questions/6888651/javascript-events-best-practice" target="_blank">JavaScript Events Best Practices</a> on Stackoverflow</p>
 		</section>
 		<section>
-			<h2>Later a Better Way to Register Events Arrived</h2>
+			<h1>Remember Dreamweaver Image Rollovers?</h1>
+			<p>OMGWTFBBQ?!?!</p>
+			<p class="jsfiddle"><a href="http://jsfiddle.net/kingkool68/ZpaS3/" target="_blank">http://jsfiddle.net/kingkool68/ZpaS3/</a></p>
+		</section>
+		<section>
+			<h2>A Better, Unobtrusive Way to Register Events Arrived</h2>
 			<pre class="language-javascript"><code>element.addEventListener('click', functionName, false);</code></pre>
-			<p>via <a href="http://http://www.quirksmode.org/js/events_advanced.html">Advanced Event Registration Models</a> by Quirksmode</p>
+			<p><strong>click</strong> not <strong>onclick</strong></p>
+			<p class="via">via <a href="http://http://www.quirksmode.org/js/events_advanced.html" target="_blank">Advanced Event Registration Models</a> by Quirksmode</p>
 		</section>
 		<section>
 			<h2>But Microsoft Had Their Own Way</h2>
@@ -112,22 +120,23 @@
 		<section>
 			<h2>jQuery To the Rescue!</h2>
 			<ul>
-				<li>Smooths out cross-browser differences</li>
-				<li>Uses an intuitive syntax for events</li>
+				<li>Smooths out cross-browser differences<br><br></li>
+				<li>Uses an intuitive syntax for events<br><br></li>
 				<li>Allows us to writes less, but do more</li>
 			</ul>
-			<p>via <a href="http://www.albertopl.com/blog/javascript-vs-jquery-cross-browser-compatibility-event-handlers-and-selectors/">JavaScript vs. jQuery</a> by AlbertoPL</p>
+			<p class="via">via <a href="http://www.albertopl.com/blog/javascript-vs-jquery-cross-browser-compatibility-event-handlers-and-selectors/" target="_blank">JavaScript vs. jQuery</a> by AlbertoPL</p>
 		</section>
 		<section>
-			<h2>Steps to Register An Event with Jquery</h2>
+			<h2>Steps to Register An Event Using Jquery</h2>
 				<ol>
 					<li>Select one or more elements<br><br></li>
-					<li>Tell jQuery what type of event to listen for</li>
+					<li>Tell jQuery what type of event to listen for<br><br></li>
 					<li>Write a function that will be fired when that event happens</li>
 				</ol>
 		</section>
 		<section>
 			<h2>What does that look like?</h2>
+			<p>(Pseudo code)</p>
 			<pre class="language-javascript"><code>$('selector').event(function() {
 	//Your Code Goes Here
 });</code></pre>
@@ -137,7 +146,11 @@
 			<pre class="language-javascript"><code>$('a').click(function() {
 	alert('Hello World');
 });</code></pre>
-			<p><a href="http://jsfiddle.net/kingkool68/KSyKp/">http://jsfiddle.net/kingkool68/KSyKp/</a></p>
+			<p class="jsfiddle"><a href="http://jsfiddle.net/kingkool68/KSyKp/" target="_blank">http://jsfiddle.net/kingkool68/KSyKp/</a></p>
+		</section>
+		<section>
+			<p><img src="http://static.someecards.com/someecards/usercards/1339349657919_8805207.png"></p>
+			<p class="fragment">Just kidding. There's more&hellip;</p>
 		</section>
 		<section>
 			<h2>Using This</h2>
@@ -145,7 +158,7 @@
 			<pre class="language-javascript"><code>$('a').click(function () {
 	alert(this.href);
 });</code></pre>
-			<p><a href="http://jsfiddle.net/kingkool68/MjqZv/">http://jsfiddle.net/kingkool68/MjqZv/</a></p>
+			<p class="jsfiddle"><a href="http://jsfiddle.net/kingkool68/MjqZv/" target="_blank">http://jsfiddle.net/kingkool68/MjqZv/</a></p>
 		</section>
 		<section>
 			<h2>Using jQuery With This</h2>
@@ -153,11 +166,11 @@
 			<pre class="language-javascript"><code>$('li').click(function() {
     alert( $(this).text() );
 });</code></pre>
-			<p><a href="http://jsfiddle.net/kingkool68/aj4N3/">http://jsfiddle.net/kingkool68/aj4N3/</a></p>
+			<p class="jsfiddle"><a href="http://jsfiddle.net/kingkool68/aj4N3/" target="_blank">http://jsfiddle.net/kingkool68/aj4N3/</a></p>
 		</section>
 		<section>
 			<h2>Input Validation</h2>
-			<p>Using keyup() attached to an input field, we can check if the value of the input meets a certain criteria.</p>
+			<p>Using <strong>keyup()</strong> attached to an input field, we can check if the value of the input meets a certain criteria.</p>
 			<pre class="language-javascript"><code>$('input').keyup(function() {
     $(this).attr('class', '');
     var val = $(this).val();
@@ -166,12 +179,76 @@
     }
 });​
 </code></pre>
-			<p><a href="http://jsfiddle.net/kingkool68/kUj2W/">http://jsfiddle.net/kingkool68/kUj2W/</a></p>
+			<p class="jsfiddle"><a href="http://jsfiddle.net/kingkool68/kUj2W/" target="_blank">http://jsfiddle.net/kingkool68/kUj2W/</a></p>
 		</section>
 		<section>
 			<h2>You Can Interupt Submitting a Form</h2>
 			<p>This is useful for checking if certain fields are filled in or you want to perform an AJAX request.</p>
-			
+			<pre class="language-javascript"><code>$('form').submit(function() {
+	if( condition == false ) {
+		//returning false cancels the form from being submitted.
+		return false;
+	}
+	
+	//returning true will allow the form to be submitted.
+	return true;
+});
+</code></pre>
+		</section>
+		<section>
+			<h2>Are you sure you want to search Google?</h2>
+			<p>Displays a confirmation box asking if you want to search for the entered term on Google.</p>
+			<pre class="language-javascript"><code>$('form').submit(function() {
+    return confirm('Are you sure you want to search Google?');
+});​
+</code></pre>
+			<p class="jsfiddle"><a href="http://jsfiddle.net/kingkool68/fZQEJ/" target="_blank">http://jsfiddle.net/kingkool68/fZQEJ/</a></p>
+		</section>
+		<section>
+			<h2>Getting Additional Event Details</h2>
+			<p>jQuery passes an event object to the function being triggered by the event.</p>
+			<p>&nbsp;</p>
+			<p>The event object is normalized across different browsers and contains extra data about the context of the event.</p>
+			<p class="via">via <a href="http://api.jquery.com/bind/#event-object" target="_blank">http://api.jquery.com/bind/#event-object</a></p>
+		</section>
+		<section>
+			<h2>The Event Object Contains Data Like:</h2>
+			<ul>
+				<li><code><a href="http://api.jquery.com/event.type/" target="_blank">type</a></code> - click, keyup, submit etc.</li>
+				<li><code><a href="http://api.jquery.com/event.which/" target="_blank">which</a></code> - key codes or mouse buttons</li>
+				<li><code><a href="http://api.jquery.com/event.pageX/" target="_blank">pageX</a></code> - mouse position relative to left edge of document</li>
+				<li><code><a href="http://api.jquery.com/event.pageY/" target="_blank">pageY</a></code> - mouse position relative to top edge of document</li>
+			</ul>
+			<p class="via">via <a href="http://api.jquery.com/category/events/event-object/" target="_blank">Event Object jQuery API Docs</a></p>
+		</section>
+		<section>
+			<h2>Follow the Twitter Example</h2>
+			<p>Get x most recent followers and move them around the screen as a swarm based on where you click.</p>
+			<pre class="language-javascript"><code>$(document).mouseup(function(e) {
+	imgAttract(e.pageX, e.pageY);
+});
+</code></pre>
+		<p class="via">via <a href="http://dev.kingkool68.com/war10k/follow-the-twitter.htm" target="_blank">Follow the Twitter</a> by Me</p>
+		</section>
+		<section>
+			<h2>Stuff I Don't Have Time To Cover But You Should Know</h2>
+			<ul>
+				<li><a href="http://stackoverflow.com/questions/4616694/what-is-event-bubbling-and-capturing" target="_blank">What is Event Bubbling?</a><br><br></li>
+				<li><a href="http://api.jquery.com/event.preventDefault/" target="_blank">event.preventDefault()</a><br><br></li>
+				<li><a href="http://stackoverflow.com/questions/1357118/event-preventdefault-vs-return-false" target="_blank">preventDefault() vs. Return False</a></li>
+			</ul>
+		</section>
+		<section>
+			<h2>Resources</h2>
+			<ul>
+				<li><a href="http://api.jquery.com/category/events/" target="_blank">api.jquery.com/category/events/<br><br></a></li>
+				<li><a href="http://www.learningjquery.com/2008/03/working-with-events-part-1" target="_blank">learningjquery.com/2008/03/working-with-events-part-1<br><br></a></li>
+				<li><a href="https://www.youtube.com/watch?v=XXwhegVTWQg" target="_blank">youtube.com/watch?v=XXwhegVTWQg</a></li>
+			</ul>
+		</section>
+		<section>
+			<h1>Questions?</h1>
+			<p>Tweet me, <a href="http://www.twitter.com/kingkool68/" target="_blank">@kingkool68</a>, or <a href="http://www.russellheimlich.com/contact.html" target="_blank">contact me</a>.</p>
 		</section>
 	</div>
 </div>
